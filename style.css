@@ -19,3 +19,35 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+.card {
+    width: 40rem;
+    background-color: #ddd;
+}
+
+.card-bio {
+    background-color: #45a564;
+    padding: 3rem 3rem 8rem 3rem;
+    display: flex;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+}
+
+
+.card-btn {
+    position: absolute;
+    bottom: -2.5rem;
+    right: 10rem;
+    width: 20rem;
+    height: 6rem;
+    background-color: #2b303a;
+    color: #fff;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+    outline: none;
+}
