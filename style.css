@@ -30,6 +30,7 @@ html {
     display: flex;
     border-radius: 0.5rem 0.5rem 0 0;
     position: relative;
+    z-index: 100;
 }
 
 .img-wrapper {
@@ -86,6 +87,12 @@ html {
     color: #fff;
     padding: 1.5rem 2rem;
     border-radius: 0 0 0.5rem 0.5rem;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+
+.change .card-contact {
+    transform: translateY(0);
 }
 
 .card-contact h4 {
@@ -94,6 +101,13 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.change .card-contact h4 {
+    transform: scale(1);
 }
 
 .card-social {
@@ -104,6 +118,9 @@ html {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .icon-wrapper {
