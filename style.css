@@ -80,6 +80,44 @@ html {
     text-transform: uppercase;
     box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
     outline: none;
+    transition: all 0.5s;
+}
+
+.change .card-btn {
+    width: 6rem;
+    right: 3rem;
+    bottom: -3rem;
+    border-radius: 50%;
+}
+
+.card-btn-contact,
+.card-btn i {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-btn-contact {
+    transition: all 0.5s 0.2s;
+}
+
+.change .card-btn-contact {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.card-btn i {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .card-btn i {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
 }
 
 .card-contact {
